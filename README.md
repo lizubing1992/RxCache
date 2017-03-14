@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/VictorAlbertos/RxCache.svg?branch=2.x)](https://travis-ci.org/VictorAlbertos/RxCache)
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RxCache-green.svg?style=true)](https://android-arsenal.com/details/1/3016)
@@ -486,3 +487,7 @@ The policy is very simple:
 * [RxActivityResult](https://github.com/VictorAlbertos/RxActivityResult): A reactive-tiny-badass-vindictive library to break with the OnActivityResult implementation as it breaks the observables chain. 
 * [RxFcm](https://github.com/VictorAlbertos/RxFcm): RxJava extension for Android Firebase Cloud Messaging (aka fcm).
 * [RxSocialConnect](https://github.com/VictorAlbertos/RxSocialConnect-Android): OAuth RxJava extension for Android.
+=======
+# RxCache
+修改原有的RxCahe
+>>>>>>> 0cb639b2c8cd87e38396c73c8ca9f6ecc22ca9ff
