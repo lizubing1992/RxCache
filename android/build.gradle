@@ -19,7 +19,7 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 def siteUrl = 'https://github.com/lizubing1992/RxCache'   // 项目的主页
 def gitUrl = 'https://github.com/lizubing1992/RxCache.git'   // Git仓库的url
 
-version = "1.2"
+version = "1.3"
 group = "com.lizubing1992"
 
 android {
@@ -29,8 +29,8 @@ android {
   defaultConfig {
     minSdkVersion 16
     targetSdkVersion 23
-    versionCode 3
-    versionName "1.2"
+    versionCode 4
+    versionName "1.3"
   }
   buildTypes {
     release {
@@ -56,10 +56,10 @@ bintray {
     publish = true // 是否是公开项目。
 
     version {
-      name = '1.2'
+      name = '1.3'
       desc = 'High integrated development framework for Android applications.'
       released  = new Date()
-      vcsTag = 'v1.2'
+      vcsTag = 'v1.3'
       attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
     }
   }
