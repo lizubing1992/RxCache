@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'android-apt'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
@@ -27,7 +27,6 @@ android {
   buildToolsVersion "23.0.1"
 
   defaultConfig {
-    applicationId "victoralbertos.io.android"
     minSdkVersion 16
     targetSdkVersion 23
     versionCode 3
