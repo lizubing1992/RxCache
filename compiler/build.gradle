@@ -11,6 +11,7 @@ dependencies {
 
     compile project(':core')
     compile project(':runtime')
+    compile project(':gson')
 
     compile 'com.google.auto.service:auto-service:1.0-rc2'
     compile 'com.squareup:javapoet:1.6.1'

@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+group = 'com.github.VictorAlbertos'
+
+configurations {
+  provided
+}
+
+sourceSets {
+  main {
+    compileClasspath += configurations.provided
+    runtimeClasspath += configurations.provided
+  }
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+  classifier = 'sources'
+  from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+  classifier = 'javadoc'
+  from javadoc.destinationDir
+}
+
+artifacts {
+  archives sourcesJar
+  archives javadocJar
+}
+
+dependencies {
+  compile project(':api')
+  compile project(':common')
+
+  compile 'com.google.code.gson:gson:2.6.2'
+
+  compileTestJava.dependsOn tasks.getByPath(':api:testClasses')
+  testCompile files(project(':api').sourceSets.test.output.classesDir)
+  testCompile 'junit:junit:4.12'
+}
