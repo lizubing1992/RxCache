@@ -19,7 +19,7 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 def siteUrl = 'https://github.com/lizubing1992/RxCache'   // 项目的主页
 def gitUrl = 'https://github.com/lizubing1992/RxCache.git'   // Git仓库的url
 
-version = "1.1"
+version = "1.2"
 group = "com.lizubing1992"
 
 android {
@@ -30,8 +30,8 @@ android {
     applicationId "victoralbertos.io.android"
     minSdkVersion 16
     targetSdkVersion 23
-    versionCode 2
-    versionName "1.1"
+    versionCode 3
+    versionName "1.2"
   }
   buildTypes {
     release {
@@ -57,10 +57,10 @@ bintray {
     publish = true // 是否是公开项目。
 
     version {
-      name = '1.0'
+      name = '1.2'
       desc = 'High integrated development framework for Android applications.'
       released  = new Date()
-      vcsTag = 'v1.0'
+      vcsTag = 'v1.2'
       attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
     }
   }
@@ -132,6 +132,7 @@ dependencies {
   compile project(':runtime')
   apt project(':compiler')
   compile project(':api')
+  compile project(':gson')
   testCompile 'junit:junit:4.12'
 
   apt "com.google.dagger:dagger-compiler:2.7"
